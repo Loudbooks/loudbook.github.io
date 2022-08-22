@@ -1,9 +1,20 @@
-html{
-    background: url(images/Background.png);
-    background-size: 100vmax;
-    background-clip: content-box;
-
-}
+body {
+    background: linear-gradient(350deg,#f05a41,#f54f97);
+    background-size: 200% 200%;
+    animation: gradient-animation 10s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 h1{
     text-align: center;
     font-size: 10vw;
