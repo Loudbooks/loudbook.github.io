@@ -1,6 +1,7 @@
 html{
     background: url(images/Background.png);
-    background-size: contain;
+    background-size: 100vmax;
+    background-clip: content-box;
 
 }
 h1{
