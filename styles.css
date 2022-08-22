@@ -15,6 +15,8 @@ body {
       background-position: 0% 50%;
     }
   }
+
+  
 h1{
     text-align: center;
     font-size: 10vw;
@@ -25,8 +27,28 @@ h1{
     color: white;
     padding: 0;
     margin: 0;
-    top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    animation: bobbing 15s ease infinite;
+}
+
+@keyframes bobbing {
+    0%{
+        top: 45%;
+        -ms-transform: translate(-50%, -45%);
+        transform: translate(-50%, -45%);
+
+    }
+    50%{
+        top: 55%;
+        -ms-transform: translate(-50%, -55%);
+        transform: translate(-50%, -55%);
+    }
+    100%{
+        top: 45%;
+        -ms-transform: translate(-50%, -45%);
+        transform: translate(-50%, -45%);
+    }
+    
 }
