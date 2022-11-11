@@ -1,0 +1,35 @@
+h1 {
+    font-size: 72px;
+
+  }
+  body{
+    overflow: hidden;
+  }
+  .container {
+    width: 300px;
+    height: 94vh;
+    margin: auto auto;
+    display: grid;
+    place-items: center;
+    grid-template-areas: "inner-div";
+  }
+  
+  .inner {
+    margin: 0;
+    font-size: 10vw;
+    font-family: "Poppins", sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    grid-area: inner-div;
+    background: linear-gradient(350deg,#f05a41,#f54f97) center center fixed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins';
+    font-size: 45vw;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+  }

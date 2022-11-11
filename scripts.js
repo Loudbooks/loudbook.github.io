@@ -14,7 +14,7 @@ function nextSection(){
     }
 }
 
-let middlecontent = ["Spigot", "Minestom", "Java", "Kotlin", "JavaScript", "MongoDB", "Minecraft", "HTML", "CSS"]
+let middlecontent = ["Java", "Kotlin", "JavaScript", "Python", "MongoDB", "HTML", "CSS", "Spigot", "Minestom", "Minecraft"]
 let wordindex = 0
 function type(string, index, deleting){
     if (deleting == false){
