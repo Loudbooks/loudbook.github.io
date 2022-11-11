@@ -1,9 +1,12 @@
- body {
+html{
+  scroll-behavior: smooth;
+}
+#sec1{
     background: linear-gradient(350deg,#f05a41,#f54f97) center center fixed;
     background-size: cover;
+    height: 100vh;
     animation: gradient-animation 10s ease infinite;
     background-repeat: no-repeat;
-    margin: 0;
   }
   
   @keyframes gradient-animation {
@@ -81,10 +84,6 @@
   grid-area: inner-div;
 }
 
-body{
-  background-color: beige;
-  animation: paint 10s ease-in-out infinite;
-}
 #arrow{
   display: block;
   margin-left: auto;
@@ -95,4 +94,28 @@ body{
 #arrow:hover{
   transform: translateY(15px);
   width: 55px;
+}
+
+#langs{
+  margin: 0;
+  font-size: 10vw;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  color: black;
+  text-align: center;
+  padding-top: 30vh;
+}
+#langsdiv{
+  margin: 0;
+  height: 100vh;
+}
+#langsdesc{
+  margin: 0;
+  font-size: 1vw;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  color: black;
+  text-align: center;
 }

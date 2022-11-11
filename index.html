@@ -9,14 +9,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     </head>
 
-    <body onmousemove="mousePos(event)">
-        <section id="1">
+    <body style="margin: 0;" onload="type('Spigot', 0, false)">
+        <div id="background"></div>
+        <section id="sec1">
             <div class="container">
                 <div class="inner" id="hi">Hi.</div>
                 <div class="inner" id="loudbook">I'm Loudbook.</div>
             </div>
 
             <img src="thing.png" width="50px" id="arrow" onclick="nextSection()">
+        </section>
+        <section id="sec2">
+            <div id="langsdiv">
+                <h1 id="langs">Languages</h1>\
+                <p id="langsdesc"><em>Anything can be learned. With a little help from the internet.</em></p>
+            </div>
         </section>
     </body>
 </html>
