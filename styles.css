@@ -1,3 +1,6 @@
+body{
+  overflow: hidden;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -112,7 +115,7 @@ html{
 }
 #langsdesc{
   margin: 0;
-  font-size: 1vw;
+  font-size: 2vw;
   font-family: "Poppins", sans-serif;
   white-space: nowrap;
   overflow: hidden;
