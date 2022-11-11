@@ -1,7 +1,9 @@
-body {
-    background: linear-gradient(350deg,#f05a41,#f54f97);
-    background-size: 200% 200%;
+ body {
+    background: linear-gradient(350deg,#f05a41,#f54f97) center center fixed;
+    background-size: cover;
     animation: gradient-animation 10s ease infinite;
+    background-repeat: no-repeat;
+    margin: 0;
   }
   
   @keyframes gradient-animation {
@@ -16,37 +18,81 @@ body {
     }
   }
 
-  
-h1{
-    text-align: center;
-    font-size: 10vw;
-    position: absolute;
-    font-family: "Poppins", sans-serif;
-    white-space: nowrap;
-    overflow: hidden;
-    color: white;
-    padding: 0;
-    margin: 0;
-    left: 50%;
-    animation: bobbing 15s ease infinite;
+#hi{
+  animation: changing1 10s ease infinite;
+}
+#loudbook{
+  animation: changing2 10s ease infinite;
+}
+ @keyframes changing1 {
+  0%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 1;
+  }
+
+  50%{
+    opacity: 0;
+  }
+  95%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+} 
+@keyframes changing2 {
+  0%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 0;
+  }
+
+  55%{
+    opacity: 1;
+  }
+  95%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+} 
+
+.container {
+  width: 300px;
+  height: 94vh;
+  margin: auto auto;
+  display: grid;
+  place-items: center;
+  grid-template-areas: "inner-div";
 }
 
-@keyframes bobbing {
-    0%{
-        top: 45%;
-        -ms-transform: translate(-50%, -45%);
-        transform: translate(-50%, -45%);
+.inner {
+  margin: 0;
+  font-size: 10vw;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  grid-area: inner-div;
+}
 
-    }
-    50%{
-        top: 55%;
-        -ms-transform: translate(-50%, -55%);
-        transform: translate(-50%, -55%);
-    }
-    100%{
-        top: 45%;
-        -ms-transform: translate(-50%, -45%);
-        transform: translate(-50%, -45%);
-    }
-    
+body{
+  background-color: beige;
+  animation: paint 10s ease-in-out infinite;
+}
+#arrow{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 1s;
+  margin-top: -50px;
+}
+#arrow:hover{
+  transform: translateY(15px);
+  width: 55px;
 }
